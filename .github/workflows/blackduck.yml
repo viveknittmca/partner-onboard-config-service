@@ -1,0 +1,7 @@
+name: Detect Rapid Scan Action
+on:
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron:  '0 0 * * *'
