@@ -18,7 +18,9 @@
 		<java.version>11</java.version>
 		<spring-cloud.version>Hoxton.SR4</spring-cloud.version>
 		<docker.image.prefix>sfgbeerworks</docker.image.prefix>
-		<docker.image.name>${project.artifactId}</docker.image.name>
+		<docker.image.name>${project.artifactId}</docker.image.name>		
+                <sonar.organization>viveknittmca</sonar.organization>
+                <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<dependencies>
