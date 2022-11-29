@@ -1,10 +1,10 @@
 name: Detect Rapid Scan Action
 on:
-  pull_request:
+  push:
     branches:
-      - main
-  schedule:
-    - cron:  '0 0 * * *'
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   security:
     runs-on: my-github-runner
